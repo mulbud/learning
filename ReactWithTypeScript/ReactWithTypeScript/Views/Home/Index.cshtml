@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/Libraries/requirejs/require.js"></script>
+    <script src="~/Scripts/CompiledTS/AppStarter.js"></script>
+</head>
+<body>
+    <div id="divForReact"></div>
+    <div>
+        <button id="buttonFirst">Click Me</button>
+    </div>
+    <script>
+        (function() {
+            main("Home/Index");
+        })();
+    </script>
+</body>
+</html>
