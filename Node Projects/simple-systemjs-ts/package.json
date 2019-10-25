@@ -1,0 +1,20 @@
+{
+  "name": "simple-systemjs-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc && http-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "systemjs": "^0.21.6"
+  }
+}

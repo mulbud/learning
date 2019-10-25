@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <script src="../node_modules/systemjs/dist/system.js"></script>
+    </head>
+    <body>
+        <div id="root">
+            <button id="buttonFirst">Click Me</button>
+        </div>
+        <script>
+            System.config({
+                packages: {
+                    '.': {
+                    defaultExtension: 'js'  // By doing this we don't need to tack on .js in our import statements
+                    }
+                }
+            });
+            System.import("./index2.js");
+        </script>
+    </body>
+</html>
