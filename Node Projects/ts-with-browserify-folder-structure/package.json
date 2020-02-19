@@ -1,0 +1,20 @@
+{
+  "name": "ts-with-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^16.5.0",
+    "lite-server": "^2.5.4",
+    "typescript": "^3.6.4",
+    "uglify-js": "^3.8.0"
+  },
+  "scripts": {
+    "start": "tsc && browserify ./public/js/app/index.js -o ./public/js/bundle.js -d && lite-server",
+    "prod": "tsc && browserify ./public/js/app/index.js | uglifyjs > ./public/js/bundle.js && lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
