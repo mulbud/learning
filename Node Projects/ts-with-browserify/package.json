@@ -10,7 +10,7 @@
     "typescript": "^3.6.4"
   },
   "scripts": {
-    "start": "tsc && rollup index.js --file bundle.js --format iife && lite-server"
+    "start": "tsc && browserify index.js -o bundle.js -d && lite-server"
   },
   "keywords": [],
   "author": "",
